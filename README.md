@@ -1,0 +1,1 @@
+# Qt_Administrator_Drop_Text
