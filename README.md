@@ -24,7 +24,7 @@ Based on Qt 5.13.1
     {
     //~~//!玄学必须打印这一段 否则ChangeWindowMessageFilterEx 函数失败~~
     //~~qDebug() << winId()  << this->window()->winId() << this->window()->effectiveWinId();~~
-    //! 在执行前先执行winId();effectiveWinId();两个函数，与qDebug()无关
+    //! 补充修改：在执行前先执行winId();effectiveWinId();两个函数，与qDebug()无关
     winId();
     this->window()->winId();
     this->window()->effectiveWinId();
