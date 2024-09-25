@@ -22,9 +22,9 @@ Based on Qt 5.13.1
     DragDrop_Frame::DragDrop_Frame(QWidget* parent, Qt::WindowFlags f )
     :QFrame(parent,f)
     {
-    ~~//!玄学必须打印这一段 否则ChangeWindowMessageFilterEx 函数失败~~
-    ~~qDebug() << winId()  << this->window()->winId() << this->window()->effectiveWinId();~~
-    //! 在执行前先执行winId();effectiveWinId();两个函数，
+    //~~//!玄学必须打印这一段 否则ChangeWindowMessageFilterEx 函数失败~~
+    //~~qDebug() << winId()  << this->window()->winId() << this->window()->effectiveWinId();~~
+    //! 在执行前先执行winId();effectiveWinId();两个函数，与qDebug()无关
     winId();
     this->window()->winId();
     this->window()->effectiveWinId();
